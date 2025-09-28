@@ -1,3 +1,4 @@
+// script js
 let timerbtn = document.querySelector(".softBoilTimer");
 let egg = document.querySelector(".loadingEgg");
 let beep = document.querySelector(".beep-sound");
