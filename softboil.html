@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soft Boiled Egg</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="eggcellence">
+      <a href="index.html" class="goback-btn">&larr; Go back</a>
+      <h1 class="main-title">EGGCELLENT</h1>
+      <p class="choose">Soft Boil Egg</p>
+      <img src="./Images/loadingEgg.png" class="loadingEgg" />
+      <p class="timer hide">3:00</p>
+      <button id="softboil" class="softBoilTimer">Start Timer (3min)</button>
+      <audio class="beep-sound" src="beep-beep.mp3" controls></audio>
+      <div class="facts">
+        <p class="fact-title">Did You Know?</p>
+        <p class="fact-description">
+          Chickens can remember over 100 different faces (humans & animals). So
+          don’t try to cut in line at the feeder—they’ll peckognize you.
+        </p>
+        <div class="directional-arrow">
+          <span class="arrow left-arr">&larr;</span>
+          <span class="arrow right-arr">&rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timer Complete Section Modal -->
+    <div class="timerComplete">
+      <p class="timer-title">🥚EGGCELLENT</p>
+      <div class="timer-msg">
+        <p>Timer Done</p>
+        <p>3 min</p>
+      </div>
+      <button class="dismiss-btn">Dismiss</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

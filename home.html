@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pause Animation Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: coral;
+        position: relative;
+        animation: moveBox 3s infinite linear;
+      }
+
+      @keyframes moveBox {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(300px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box"></div>
+    <button id="toggleBtn">Pause</button>
+
+    <script>
+      const box = document.getElementById("box");
+      const btn = document.getElementById("toggleBtn");
+      let isPaused = false;
+
+      btn.addEventListener("click", () => {
+        if (isPaused) {
+          box.style.animationPlayState = "running";
+          btn.textContent = "Pause";
+        } else {
+          box.style.animationPlayState = "paused";
+          btn.textContent = "Resume";
+        }
+        isPaused = !isPaused;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egg Timer | Know the Time for your egg</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="eggcellence">
+      <h1 class="main-title">EGGCELLENT</h1>
+      <p class="choose">Choose One</p>
+      <div class="egg-container">
+        <a href="softboil.html">
+          <div class="eggs">
+            <img src="./Images/softBoiled.png" class="egg-image" />
+            <p class="egg-type">Soft Boiled Egg</p>
+          </div>
+        </a>
+        <a href="mediumboil.html">
+          <div class="eggs">
+            <img src="./Images/mediumBoiled.png" class="egg-image" />
+            <p class="egg-type">Medium Boiled Egg</p>
+          </div>
+        </a>
+        <a href="hardboil.html">
+          <div class="eggs">
+            <img src="./Images/hardboiled.png" class="egg-image" />
+            <p class="egg-type">Hard Boiled Egg</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer id="footer">
+      &copy; <span id="year"></span> Sanskar Piya. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
