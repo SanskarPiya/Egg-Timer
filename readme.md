@@ -32,7 +32,7 @@ The goal was to explore core web development concepts while building something s
 
 ## 🔗 Live Link
 
-You can view the static frontend here: 👉 [Egg Timer - GitHub Pages](https:)
+You can view the static frontend here: 👉 [Egg Timer - GitHub Pages](https://sanskarpiya.github.io/Egg-Timer/).
 
 ## 🚀 How to Run
 
